@@ -1,0 +1,14 @@
+/* box containing form */
+#box{
+    margin-top: 7%;
+    background-color:green;
+    color:white;
+    text-align: center;
+    width: 50%;
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* #box button{
+    margin:2%;
+} */

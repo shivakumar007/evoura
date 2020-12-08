@@ -1,0 +1,36 @@
+<div class="container" id="box">
+    <h1>Sign Up here..!</h1>
+    <hr style="color:white">
+    <form action="/users/create" method="POST">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Name</span>
+            </div>
+            <input type="text" class="form-control" name="name" placeholder="Your Name" aria-label="Username" aria-describedby="basic-addon1" required>
+        </div>
+    
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Mail</span>
+            </div>
+            <input type="email" class="form-control" name="email" placeholder="Your Email" aria-label="Email" aria-describedby="basic-addon1" required>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Password</span>
+            </div>
+            <input type="password" class="form-control" name="password" placeholder="Enter your password" aria-label="Password" aria-describedby="basic-addon1" required>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Re-enter</span>
+            </div>
+            <input type="password" class="form-control" name="confirmPassword" placeholder="Confirm password" aria-label="Password" aria-describedby="basic-addon1" required>
+        </div>
+        <button type="submit">Sign Up</button>
+        <p><strong>&nbsp;or&nbsp;</strong></p>
+        <button onclick="window.location='/users/auth/google'">Continue with Google</button>
+        
+      </form>
+    <p>Already have an account? <a href="/users/sign-in">Sign in</a> </p>
+</div>

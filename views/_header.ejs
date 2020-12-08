@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/">Authenticator</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span>Click for options</span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        
+        <li class="nav-item active">
+          <a class="nav-link" href="/users/profile">Home<span class="sr-only">(current)</span></a>
+        </li>
+
+        <% if(!locals.user){%>
+        <li class="nav-item">
+          <a class="nav-link" href="/users/sign-up">Sign Up</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/users/sign-in"> Sign In</a>
+        </li>
+        <!-- <%}else{%>
+            <li class="nav-item">
+                <a class="nav-link" href="/users/sign-out">ss <i class="fa fa-sign-out"></i> Sign Out</a>
+            </li>
+        <%}%> -->
+      </ul>
+    </div>
+    </div>
+  </nav>

@@ -1,0 +1,25 @@
+<div class="container" id="box">
+    <h1>Sign In</h1>
+    <hr style="color:white">
+    <form action="/users/create-session" method="POST">
+    
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Email</span>
+            </div>
+            <input type="email" class="form-control" name="email" placeholder="Enter your email" aria-label="Username" aria-describedby="basic-addon1" required>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Password</span>
+            </div>
+            <input type="password" class="form-control" name="password" placeholder="Enter your password" aria-label="Password" aria-describedby="basic-addon1" required>
+        </div>
+        <button type="submit">Sign In</button>
+        <p><strong>or</strong></p>
+        <button  onclick="window.location='/users/auth/google'">Continue with Google</button>
+
+    </form>
+    <p>New to Authenticator? <a href="/users/sign-up">Sign Up</a></p>
+    <p><a href="/users/forgot-password">Forgot Password?</a></p>
+</div>
